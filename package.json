@@ -1,0 +1,25 @@
+{
+  "name": "mathframework",
+  "version": "1.0.0",
+  "description": "An experimental utility for showing all the possibilities of mathematics in JavaScript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodukov/MathFramework.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "rodukov <electroneuphoria@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rodukov/MathFramework/issues"
+  },
+  "homepage": "https://github.com/rodukov/MathFramework#readme",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}
