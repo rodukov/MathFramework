@@ -1,10 +1,12 @@
 import math
-import src.MathFramework as MathFramework
+from src.MathFramework import MathFramework as MF
+
 
 def main():
     while True:
         _input = input("MathFramework > ")
         _result = eval(_input)
-        print(_result)
+        print(f'Result: {_result}')
+        print('--------------')
 
 if ( __name__ == "__main__" ): main()

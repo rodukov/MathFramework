@@ -1,12 +1,17 @@
 import math
+import formatkit
 class MathFramework:
-    def help():
-        return """Welcome to MathFramework 1.5.3
-        distance_between_points(point1, point2) - accept 2 tuple with point coordinate
+    def help(): # ┠ ┗ ┣
+        return f"""{formatkit.default}Welcome to MathFramework 1.5.3{formatkit.default}
+        ├ distance_between_points(point1, point2) - accept 2 tuple with point coordinate
+        └ sector_area(R, a) - [Radius, alpha] find sector area
+✔ Use MathFramework.help() to show this message
+✔ Use help() to show python help message
+✔ You can use all mathematic expressions like 1+1
         """
-    class parabola:
-        def table(a,b,c):
-            print(f"Created function {a}x²+{b}x+{c} with name parabola{a}{b}{c}")
-            # globals()[parabola{a}{b}{c}] = 50
     def distance_between_points(point1, point2):
         return math.sqrt( (point2[0] - point1[0] )**2 + (point2[1] - point1[1])**2 )
+    def sector_area(R, a):
+        return ((math.pi*R**2)/360)*a
+
+print(MathFramework.help())
