@@ -1,7 +1,16 @@
 import math
 import formatkit
+from src.ElegantClear import clear as cls
+
 class MathFramework:
-    def help(): # ┠ ┗ ┣
+    def help(show_logo: bool = False): # ┠ ┗ ┣
+        cls()
+        if show_logo:
+            print("""                   _                                
+ |\/|  _. _|_ |_  |_ ._ _. ._ _   _        _  ._ |  
+ |  | (_|  |_ | | |  | (_| | | | (/_ \/\/ (_) |  |<
+                  terminal mathematic framework
+""")
         return f"""{formatkit.default}Welcome to MathFramework 1.5.3{formatkit.default}
         ├ distance_between_points(point1, point2) - accept 2 tuple with point coordinate
         └ sector_area(R, a) - [Radius, alpha] find sector area
@@ -14,5 +23,6 @@ class MathFramework:
         return math.sqrt( (point2[0] - point1[0] )**2 + (point2[1] - point1[1])**2 )
     def sector_area(R, a):
         return ((math.pi*R**2)/360)*a
+
 
 print(MathFramework.help())
