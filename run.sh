@@ -1,2 +1,0 @@
-fpc main.pas
-./main
