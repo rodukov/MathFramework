@@ -18,6 +18,7 @@ class MathFramework:
 ✔ Use help() to enter python help console
 ✔ You can use all mathematic expressions like 1+1
 ✔ You can use added module math, for example math.pi
+✔ You can use your system enviroment, for example sh help
         """
     def distance_between_points(point1, point2):
         return math.sqrt( (point2[0] - point1[0] )**2 + (point2[1] - point1[1])**2 )
