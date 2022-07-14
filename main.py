@@ -1,6 +1,7 @@
 import math
 from src.MathFramework import MathFramework
 from src.Parabola import Parabola
+from src.quadratic_equation import quadratic_equation
 from os import system
 
 def do(_input: str, MF_SCRIPT_ITEMS: list = ['var', 'use', 'run', 'sh']):
