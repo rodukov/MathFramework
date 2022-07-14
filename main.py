@@ -6,7 +6,7 @@ from os import system
 def do(_input: str, MF_SCRIPT_ITEMS: list = ['var', 'use', 'run', 'sh']):
     _topics = _input.split()
     if _topics[0] in MF_SCRIPT_ITEMS:
-        if (_topics[0] == 'var'): globals()[_topics[1]] = _topics[3]
+        if (_topics[0] == 'var'): globals()[_topics[1]] = eval(_topics[3])
         if (_topics[0] == 'sh'): system(_topics[1])
         elif (_topics[0] == 'run'): locals()[_topics[1]]()
     else:
@@ -19,6 +19,7 @@ def main():
         _input = input("MathFramework > ")
         try: do(_input)
         except Exception as error: print(error)
-        print('--------------')
+        for _ in range(15): print('-', end="")
+        else: print('-')
 
 if ( __name__ == "__main__" ): main()
