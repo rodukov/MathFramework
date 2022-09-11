@@ -1,3 +1,0 @@
-formatkit
-beautifultable
-matplotlib

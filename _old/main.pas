@@ -1,3 +1,0 @@
-program main;
-begin
-end.
