@@ -1,8 +1,12 @@
 import math
+from os import system
+
+# import all components
 from src.MathFramework import MathFramework
 from src.Parabola import Parabola
 from src.quadratic_equation import quadratic_equation
-from os import system
+from src.progression import progression
+
 
 def do(_input: str, MF_SCRIPT_ITEMS: list = ['var', 'use', 'run', 'sh']):
     _topics = _input.split()
