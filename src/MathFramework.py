@@ -2,9 +2,20 @@ import math
 import formatkit
 from src.ElegantClear import clear as cls
 
+from os import listdir
+from os.path import isfile, join
+
+
 class MathFramework:
     def help(show_logo: bool = False): # ┠ ┗ ┣
         cls()
+        all_modules = ""
+        files = [f.replace('.py', '') for f in listdir('src/mathframework') if isfile(join('src/mathframework', f))]
+        for module in range(0, len(files)):
+            if module == len(files)-1:
+                all_modules += "        └ "+files[module]
+            else:
+                all_modules += "        ├ "+files[module]+"\n"
         if show_logo:
             print("""                   _                                
  |\/|  _. _|_ |_  |_ ._ _. ._ _   _        _  ._ |  
@@ -12,10 +23,7 @@ class MathFramework:
                   terminal mathematic framework
 """)
         return f"""{formatkit.default}Welcome to MathFramework 1.5.3{formatkit.default}
-        ├ Parabola - independent class run with .help() prefix
-        ├ quadratic_equation - [a, b, c] solve quadratic equation
-        ├ distance_between_points(point1, point2) - accept 2 tuple with point coordinate
-        └ sector_area(R, a) - [Radius, alpha] find sector area
+{all_modules}
 ✔ Use MathFramework.help() to show this message
 ✔ Use help() to enter python help console
 ✔ You can use all mathematic expressions like 1+1
@@ -85,10 +93,4 @@ math.inf 	Returns a floating-point positive infinity
 math.nan 	Returns a floating-point NaN (Not a Number) value
 math.pi 	Returns PI (3.1415...)
 math.tau 	Returns tau (6.2831...)"""
-    def distance_between_points(point1, point2):
-        return math.sqrt( (point2[0] - point1[0] )**2 + (point2[1] - point1[1])**2 )
-    def sector_area(R, a):
-        return ((math.pi*R**2)/360)*a
-
-
 print(MathFramework.help())
