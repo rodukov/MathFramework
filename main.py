@@ -3,10 +3,18 @@ from os import system
 
 # import all components
 from src.MathFramework import MathFramework
-from src.mathframework.Parabola import Parabola
-from src.mathframework.quadratic_equation import quadratic_equation
-from src.mathframework.progression import progression
+# from src.mathframework.Parabola import Parabola
+# from src.mathframework.quadratic_equation import quadratic_equation
+# from src.mathframework.progression import progression
 
+from os import listdir
+from os.path import isfile, join
+
+files = [f.replace('.py', '') for f in listdir('src/mathframework') if isfile(join('src/mathframework', f))]
+for _import in files:
+    im = __import__('src.mathframework.'+_import, globals(), locals(), ['*'], 0) # get imported module and import all
+    func = getattr(im, _import) # find executable class
+    globals()[_import] = func # save it
 
 def do(_input: str, MF_SCRIPT_ITEMS: list = ['var', 'use', 'run', 'sh']):
     _topics = _input.split()
