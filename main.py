@@ -1,5 +1,6 @@
 import math
 from os import system
+import readline
 
 # import all components
 from src.MathFramework import MathFramework
@@ -19,10 +20,10 @@ for _import in files:
 def do(_input: str, MF_SCRIPT_ITEMS: list = ['var', 'use', 'run', 'sh']):
     _topics = _input.split()
     if _topics[0] in MF_SCRIPT_ITEMS:
-        if (_topics[0] == 'var'): globals()[_topics[1]] = eval(_topics[3])
-        if (_topics[0] == 'sh'): system(_topics[1])
-        elif (_topics[0] == 'run'): locals()[_topics[1]]()
-    else:
+        if (_topics[0] == 'var'): globals()[_topics[1]] = eval(_topics[3]) # create var
+        if (_topics[0] == 'sh'): system(_topics[1]) # use bash(system shell)
+        elif (_topics[0] == 'run'): locals()[_topics[1]]() # run function
+    else: # call eval()
         _result = eval(_input)
         print(f'{_input.replace("*", "×").replace("/", "÷").replace("-", "−")} is {_result}')
 
