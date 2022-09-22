@@ -1,5 +1,5 @@
 ### MathFramework - the best open source terminal mathematic framework
-#### How I can learn and use MathFramework?
+#### 📘 How I can learn and use MathFramework?
 * I moved the documentation to the [wiki](https://github.com/rodukov/MathFramework/wiki) section.
 #### 💬 If I've a question?
 * If you have any questions **that are not an error**. Or you want to suggest something, write in the [discussions](https://github.com/rodukov/MathFramework/discussions) section.
