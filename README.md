@@ -2,7 +2,7 @@
 #### 📘 How I can learn and use MathFramework?
 * I moved the documentation to the [Wiki](https://github.com/rodukov/MathFramework/wiki) section.
 #### 💬 If I've a question?
-* If you have any questions **that are not an error**. Or you want to suggest something, write in the [Discussions](https://github.com/rodukov/MathFramework/discussions) section.
+* If you have any questions **that are not an issue**. Or you want to suggest something, write in the [Discussions](https://github.com/rodukov/MathFramework/discussions) section.
 #### 👥 If I've found an error?
 * If you find a real error or flaw. Post in the [Issue](https://github.com/rodukov/MathFramework/issues) section.
 #### ⚙️ How to install & run it? *[README.md]*
