@@ -11,11 +11,16 @@ class MathFramework:
         cls()
         all_modules = ""
         files = [f.replace('.py', '') for f in listdir('src/mathframework') if isfile(join('src/mathframework', f))]
+        descriptions = []
+        for _import in files:
+            im = __import__('src.mathframework.'+_import, globals(), locals(), ['*'], 0) # get imported module and import all
+            func = getattr(im, _import) # find executable class
+            descriptions.append(func.Meta.description)
         for module in range(0, len(files)):
             if module == len(files)-1:
-                all_modules += "        └ "+files[module]
+                all_modules += "        └ "+files[module]+" - "+descriptions[module]
             else:
-                all_modules += "        ├ "+files[module]+"\n"
+                all_modules += "        ├ "+files[module]+" - "+descriptions[module]+"\n"
         if show_logo:
             print("""                   _                                
  |\/|  _. _|_ |_  |_ ._ _. ._ _   _        _  ._ |  

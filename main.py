@@ -1,13 +1,9 @@
 import math
 from os import system
 import readline
-
-# import all components
+# MathFramework
 from src.MathFramework import MathFramework
-# from src.mathframework.Parabola import Parabola
-# from src.mathframework.quadratic_equation import quadratic_equation
-# from src.mathframework.progression import progression
-
+# File Explorer
 from os import listdir
 from os.path import isfile, join
 
