@@ -1,4 +1,6 @@
 class Parabola:
+    class Meta:
+        description = 'Hello, World!'
     @staticmethod
     def help():
         import formatkit
@@ -10,14 +12,14 @@ class Parabola:
         """
 
     def __init__(self, a: int, b: int, c: int):
-        from src.quadratic_equation import quadratic_equation
+        from src.mathframework.quadratic_equation import quadratic_equation
         self.a = a
         self.b = b
         self.c = c
         self.branches = 'up' if self.a >= 1 else 'down'
         self.x_vertex = (-self.b)/2*self.a
         self.y_vertex = self.a*self.x_vertex**2+self.b*self.x_vertex+self.c
-        self.zeros_x  = quadratic_equation(self.a, self.b, self.c)
+        self.zeros_x  = quadratic_equation.quadratic_equation(self.a, self.b, self.c)
         self.zeros_y = self.a*self.zeros_x[0]**2+self.b*self.zeros_x[0]+self.c, self.a*self.zeros_x[1]**2+self.b*self.zeros_x[1]+self.c
 
     def table(self, min, max, draw=True):
