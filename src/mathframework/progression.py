@@ -1,6 +1,6 @@
 class progression:
     class Meta:
-        description = 'Hello, World!'
+        description = 'ararithmetic and geometric progressions'
     class arithmetic:
         def get_an(a1, d, n) -> int or float:
             return a1+d*(n-1)
