@@ -1,7 +1,7 @@
 <div align="center">
 <p>
     <a href="https://github.com/rodukov/MathFramework/">
-      <img src="https://user-images.githubusercontent.com/101352977/192589076-25e46140-7026-490c-ab2c-078b1e068563.png">
+      <img src="https://user-images.githubusercontent.com/101352977/192590779-01a5a535-0a40-4b98-846b-b0d956548623.png">
     </a>
 </p>
 </div>
