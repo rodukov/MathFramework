@@ -1,3 +1,11 @@
+<div align="center">
+<p>
+    <a href="https://github.com/rodukov/MathFramework/">
+      <img src="https://user-images.githubusercontent.com/101352977/192589076-25e46140-7026-490c-ab2c-078b1e068563.png">
+    </a>
+</p>
+</div>
+
 ### MathFramework - the best open source terminal mathematic framework
 #### 📘 How I can learn and use MathFramework?
 * I moved the documentation to the [Wiki](https://github.com/rodukov/MathFramework/wiki) section.
