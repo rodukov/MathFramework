@@ -1,4 +1,5 @@
 import math
+from typing import Union
 
 class pythagorean_theorem:
     class Meta:
@@ -6,7 +7,7 @@ class pythagorean_theorem:
         package = "pythagorean_theorem"
         description = "takes at least two arguments, you must specify whether it is a cathet or a hypotenuse"
         creator = "Gleb Rodukov<electroneuphoria@gmail.com>"
-    def pythagorean_theorem(cathet1: float = None, cathet2: float = None, hypotenuse: int = None) -> float:
+    def pythagorean_theorem(cathet1: Union[float, int] = None, cathet2: Union[float, int] = None, hypotenuse: Union[float, int] = None) -> float:
         "This function is working Pythagorean Theorem"
         if cathet1 == None:
             return math.sqrt(
