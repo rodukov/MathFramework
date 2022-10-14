@@ -7,6 +7,7 @@ class pythagorean_theorem:
         package = "pythagorean_theorem"
         description = "takes at least two arguments, you must specify whether it is a cathet or a hypotenuse"
         creator = "Gleb Rodukov<electroneuphoria@gmail.com>"
+        # docs = {".pythagorean_theorem(cathet1, cathet2, hypotenuse)": "pythagorean theorem"}
     def generate_graphics(len_cathet1, len_hypo):
         ...
     def pythagorean_theorem(cathet1: Union[float, int] = None, cathet2: Union[float, int] = None, hypotenuse: Union[float, int] = None, draw: bool = False) -> float:

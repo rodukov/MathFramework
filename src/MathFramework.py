@@ -7,6 +7,18 @@ from os.path import isfile, join
 
 
 class MathFramework:
+    def get_docs(module_name):
+        im = __import__('src.mathframework.'+module_name, globals(), locals(), ['*'], 0) # get imported module and import all
+        func = getattr(im, module_name) # find executable class
+        docs = func.Meta.docs
+        for doc in docs.items():
+            if type(doc[1]) == str:
+                print(f"├ {doc[0]} - {doc[1]}")
+            else:
+                print('├ "',doc[0],'" class documentation')
+                for under_doc in doc[1].items():
+                    print(f"    ├ {under_doc[0]} - {under_doc[1]}")
+
     def help(show_logo: bool = False): # ┠ ┗ ┣
         cls()
         all_modules = ""
