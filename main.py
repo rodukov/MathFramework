@@ -1,6 +1,5 @@
 import math
 from os import system
-import readline
 # MathFramework
 from src.MathFramework import MathFramework
 # File Explorer
