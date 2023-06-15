@@ -6,7 +6,7 @@
 </p>
 </div>
 
-### MathFramework - the best open source terminal mathematic framework
+### MathFramework - the best open source terminal mathematic framework.
 #### 📘 How I can learn and use MathFramework?
 * I moved the documentation to the [Wiki](https://github.com/rodukov/MathFramework/wiki) section.
 #### 💬 If I've a question?
